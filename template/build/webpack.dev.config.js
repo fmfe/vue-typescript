@@ -27,12 +27,6 @@ devConfig.plugins = (devConfig.plugins || []).concat([
         loaders: ['vue-style-loader','css-loader', 'postcss-loader', 'less-loader']
     })),
 
-    new webpack.DefinePlugin({
-        "process.env": {
-            NODE_ENV: JSON.stringify(config.dev.env)
-        }
-    }),
-
     new HappyPack(getHappyPackConfig({
         id: 'css-dev',
         loaders: ['vue-style-loader','css-loader', 'postcss-loader']

@@ -27,7 +27,7 @@ module.exports = {
           "message" : "client port",
           "default" : 3000
       },
-    "state": {
+     "state": {
         "type": "list",
         "message": "state manage for your app",
         "choices": [

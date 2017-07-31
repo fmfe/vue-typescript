@@ -8,13 +8,13 @@ import actions from './actions';
 import getters from './getters';
 
 // modules
-import user from './modules/user-info';
+import time from './modules/time';
 
 export default new Vuex.Store({
    strict: false,
    actions,
    getters,
    modules: {
-       user,
+       time,
    },
 });

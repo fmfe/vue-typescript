@@ -13,7 +13,7 @@ if (env !== 'development') {
     Vue.config.productionTip = false;
 }
 
-import store from '../store/index';
+import store from '../vuex/index';
 
 Vue.use(Router);
 

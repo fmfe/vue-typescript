@@ -98,10 +98,10 @@ module.exports = {
     plugins:[
 
         new webpack.DefinePlugin({
-            ENV: JSON.stringify(env),
-            CDN: JSON.stringify(cdn),
-            API: JSON.stringify(api),
-            BASE: JSON.stringify(base)
+            "process.env.ENV": JSON.stringify(env),
+            "process.env.CDN": JSON.stringify(cdn),
+            "process.env.API": JSON.stringify(api),
+            "process.env.BASE": JSON.stringify(base)
         }),
 
         //copy assets

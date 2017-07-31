@@ -43,10 +43,6 @@ module.exports = {
           "type": "confirm",
           "message": "Need fmcomponents?"
        },
-      "jquery": {
-          "type": "confirm",
-          "message": "Need jQuery(2.1.0, auto import by cdn)?"
-      },
       "imageminifying": {
           "type": "confirm",
           "message": "Need image minifying in production?"

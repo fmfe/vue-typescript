@@ -6,6 +6,10 @@ module.exports = {
           "message" : "Project name",
           "default" : "vue-startup"
       },
+      "author": {
+          "type"   : "string",
+          "message": "Author"
+      },
       "version": {
           "type"    : "string",
           "message" : "Project version",
@@ -17,27 +21,27 @@ module.exports = {
           "message" : "Project description",
           "default" : "A new Vue.js + TypeScript project"
       },
-      "author": {
-          "type"   : "string",
-          "message": "Author"
-      },
       "port": {
           "type"    : "string",
           "required": false,
           "message" : "client port",
           "default" : 3000
       },
-      "path": {
-          "type"    : "string",
-          "required": false,
-          "message" : "Webpack's outputPath, starts with dirName, eg:'dist' or 'dist/build'",
-          "default" : "dist"
-      },
-      "publicPath": {
-          "type"    : "string",
-          "required": false,
-          "message" : "Webpack dev server's publicPath, starts with '/' and ends with '/'",
-          "default" : "/"
+    "state": {
+        "type": "list",
+        "message": "state manage for your app",
+        "choices": [
+            {
+                "name": "Mobx (https://github.com/mobxjs/mobx)",
+                "value": "mobx",
+                "short": "mobx"
+            },
+            {
+                "name": "Vuex (https://github.com/vuejs/vuex)",
+                "value": "vuex",
+                "short": "vuex"
+            }
+        ]
       },
       "fmcomponents": {
           "type": "confirm",

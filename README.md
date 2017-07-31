@@ -19,4 +19,4 @@ chare init fmfe/vue-typescript your-project-name -o remote-url
 一些字段说明如下:
 
  * **port**: 客户端的端口号, 默认是 3000
- * **prefix**: Ajax 请求的前缀, 如 `http://test.com`, 默认是 `''`.
+ * **state**: 状态管理工具选择，目前支持 mobx 和 vuex

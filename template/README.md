@@ -40,7 +40,8 @@
     |——network              // 网络请求
     |——page                 // 项目入口
     |--typings              // 类型声明
-    |——store                // store 入口
+    |——mobx                 // mobx models 入口
+    |——vuex                 // vuex store 入口
     |——index.html           // 挂载的静态文件
   |——.eslintrc.json         // eslint 配置
   |--tslint.json            // tslint 配置
@@ -54,7 +55,6 @@
 
 ## 其它
 
-* **window.PREFIX**: api请求前缀, 在 config/index.js#prefix 中配置
 * 脚手架默认加入了两个别名: `@src` 和 `@components`. 前者指向 `src` 目录, 后者指向 `src/components` 目录, 便于引入资源:
 
 ```

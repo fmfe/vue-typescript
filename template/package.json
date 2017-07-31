@@ -22,8 +22,15 @@
     {{/fmcomponents}}
     "vue-class-component": "^5.0.2",
     "vue-router": "^2.7.0",
+    {{#if_eq state 'vuex'}}
     "vuex": "^2.3.1",
     "vuex-router-sync": "^4.2.0",
+    {{/if_eq}}
+    {{#if_eq state 'mobx'}}
+    "mobx": "^3.2.1",
+    "vue-mobx": "^1.2.1",
+    {{/if_eq}}
+    "axios": "^0.16.2",
     "async-await-error-handling": "^0.5.2"
   },
   "devDependencies": {

@@ -22,7 +22,9 @@ let include = [
 const env = process.env.NODE_ENV || 'development';
 
 // 全局变量
-let {cdn, api, base} = config[env];
+let cdn = process.env.FM_CDN ? process.env.FM_CDN : config[env].cdn;
+let api = process.env.FM_API ? process.env.FM_API : config[env].api;
+let base = process.env.FM_BASE ? process.env.FM_BASE : config[env].base;
 
 console.log('\n---------env------:\n', env);
 console.log('\n---------cdn------:\n', cdn);
